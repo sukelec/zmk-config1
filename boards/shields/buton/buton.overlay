@@ -8,14 +8,14 @@
         wakeup-source;
 
         input-gpios
-            = <&xiao_d 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // Buton 1 (D0)
-            , <&xiao_d 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // Buton 2 (D1)
-            , <&xiao_d 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // Buton 3 (D2)
-            , <&xiao_d 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // Buton 4 (D3)
-            , <&xiao_d 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // Buton 5 (D4)
-            , <&xiao_d 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // Buton 6 (D5)
-            , <&xiao_d 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // Buton 7 (D6)
-            , <&xiao_d 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // Buton 8 (D7)
+            = <&promicro 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&promicro 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&promicro 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&promicro 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&promicro 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&promicro 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&promicro 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&promicro 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             ;
-        };
+    };
 };
