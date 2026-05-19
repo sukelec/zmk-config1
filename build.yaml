@@ -19,5 +19,5 @@
 #
 ---
 include:
-  - board: promicro
+  - board: nice_nano_v2
     shield: 8buton
