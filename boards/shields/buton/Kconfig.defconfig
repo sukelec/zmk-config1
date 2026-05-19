@@ -1,0 +1,6 @@
+if SHIELD_BUTON
+
+config ZMK_KEYBOARD_NAME
+    default "8buton"
+
+endif # SHIELD_BUTON
