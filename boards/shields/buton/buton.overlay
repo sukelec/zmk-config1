@@ -23,7 +23,6 @@
             ;
     };
 
-    // ZMK Studio'nun tuşların basılma sırasını anlaması için gereken dönüşüm matrisi
     direct_transform: direct_transform {
         compatible = "zmk,matrix-transform";
         columns = <8>;
@@ -33,7 +32,6 @@
         >;
     };
 
-    // ZMK Studio arayüzünde butonların yan yana görsel olarak dizilmesini sağlayan koordinatlar
     layouts {
         compatible = "zmk,physical-layouts";
         default_layout: default_layout {
@@ -43,14 +41,14 @@
             kscan = <&kscan0>;
             
             keys = <
-                <&key_physical_attrs 100 100   0   0 0 0 0> // 1. Buton
-                <&key_physical_attrs 100 100 100   0 0 0 0> // 2. Buton
-                <&key_physical_attrs 100 100 200   0 0 0 0> // 3. Buton
-                <&key_physical_attrs 100 100 300   0 0 0 0> // 4. Buton
-                <&key_physical_attrs 100 100 400   0 0 0 0> // 5. Buton
-                <&key_physical_attrs 100 100 500   0 0 0 0> // 6. Buton
-                <&key_physical_attrs 100 100 600   0 0 0 0> // 7. Buton
-                <&key_physical_attrs 100 100 700   0 0 0 0> // 8. Buton
+                <&key_physical_attrs 100 100   0   0 0 0 0>
+                <&key_physical_attrs 100 100 100   0 0 0 0>
+                <&key_physical_attrs 100 100 200   0 0 0 0>
+                <&key_physical_attrs 100 100 300   0 0 0 0>
+                <&key_physical_attrs 100 100 400   0 0 0 0>
+                <&key_physical_attrs 100 100 500   0 0 0 0>
+                <&key_physical_attrs 100 100 600   0 0 0 0>
+                <&key_physical_attrs 100 100 700   0 0 0 0>
             >;
         };
     };
