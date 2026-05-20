@@ -1,6 +1,9 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+// Eğer dosyalar aynı klasördeyse bu satır ZMK Studio'nun haritayı çözmesini sağlar:
+#include "buton.overlay"
+
 / {
     keymap {
         compatible = "zmk,keymap";
