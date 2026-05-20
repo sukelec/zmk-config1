@@ -23,13 +23,12 @@
             ;
     };
 
+    // Parse hatasını çözen kısım: RC() yerine doğrudan tuş indekslerini veriyoruz
     direct_transform: direct_transform {
         compatible = "zmk,matrix-transform";
         columns = <8>;
         rows = <1>;
-        map = <
-            RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4) RC(0,5) RC(0,6) RC(0,7)
-        >;
+        map = <0 1 2 3 4 5 6 7>;
     };
 
     layouts {
