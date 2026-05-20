@@ -1,7 +1,8 @@
+#include <physical_layouts.dtsi>
+
 / {
     chosen {
         zmk,kscan = &kscan0;
-        /* ZMK Studio'nun bu yerleşimi kullanmasını zorunlu kılıyoruz */
         zmk,physical-layout = &default_layout;
     };
 
@@ -21,7 +22,6 @@
             ;
     };
 
-    /* Doğrudan pin bağlantılarında matris dönüşümünü 1:1 yapmak için boş bir transform tanımı */
     direct_transform: direct_transform {
         compatible = "zmk,matrix-transform";
         columns = <8>;
@@ -31,23 +31,24 @@
         >;
     };
 
-    /* ZMK Studio'nun hata vermesini önleyen ve tuşları algılamasını sağlayan yeni blok */
     layouts {
         compatible = "zmk,physical-layouts";
         default_layout: default_layout {
             compatible = "zmk,physical-layout";
             display-name = "Default Layout";
             transform = <&direct_transform>;
+            kscan = <&kscan0>;
+            
+            /* Parametreler sırasıyla: Genişlik, Yükseklik, X_Konumu, Y_Konumu, Döndürme, RX, RY */
             keys = <
-                /* ZMK Studio arayüzündeki sanal x ve y koordinatları (X_koordinatı Y_koordinatı) */
-                <&key_physical_attrs 0 0> // 1. Tuş
-                <&key_physical_attrs 1 0> // 2. Tuş
-                <&key_physical_attrs 2 0> // 3. Tuş
-                <&key_physical_attrs 3 0> // 4. Tuş
-                <&key_physical_attrs 4 0> // 5. Tuş
-                <&key_physical_attrs 5 0> // 6. Tuş
-                <&key_physical_attrs 6 0> // 7. Tuş
-                <&key_physical_attrs 7 0> // 8. Tuş
+                <&key_physical_attrs 100 100   0   0 0 0 0> // 1. Tuş
+                <&key_physical_attrs 100 100 100   0 0 0 0> // 2. Tuş
+                <&key_physical_attrs 100 100 200   0 0 0 0> // 3. Tuş
+                <&key_physical_attrs 100 100 300   0 0 0 0> // 4. Tuş
+                <&key_physical_attrs 100 100 400   0 0 0 0> // 5. Tuş
+                <&key_physical_attrs 100 100 500   0 0 0 0> // 6. Tuş
+                <&key_physical_attrs 100 100 600   0 0 0 0> // 7. Tuş
+                <&key_physical_attrs 100 100 700   0 0 0 0> // 8. Tuş
             >;
         };
     };
